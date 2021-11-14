@@ -22,6 +22,10 @@ header {
     display: block;
 }
 
+div {
+    display: block;
+}
+
 .hero {
     display: flex;
     margin-top: 60px;
@@ -56,4 +60,55 @@ header {
     max-width: 1440px;
     padding-right: 100px;
     padding-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.herotext {
+    width: 70%;
+    max-width: 820px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 57px;
+    line-height: 75px;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, ol, p, ul {
+    margin-bottom: 10px;
+}
+
+ol, p, ul {
+    margin-top: 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.paragraphdesc {
+    max-width: 511px;
+}
+
+.buttondown {
+    display: inline-block;
+    margin-top: 30px;
+    padding-right: 35px;
+    background-image: url(/assets/images/down-arrow.png);
+    background-position: 100% 50%;
+    background-size: auto;
+    background-attachment: scroll;
+    -webkit-transition: background-position .3s ease;
+    transition: background-position .3s ease;
+    font-size: 24px;
+    font-weight: 900;
 }
