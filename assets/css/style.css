@@ -183,9 +183,17 @@ aside {
     padding: 5px;
     margin: 10px;
     box-shadow: 12px 12px 2px 1px rgb(0 0 95 / 20%);
-    color: black;
+    color: white;
 }
 
+aside p {
+    font-size: 13px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    line-height: 32px;
+    position: relative;
+    display: block;
+}
 footer {
     flex: 40%;
     background: linear-gradient(0.5turn, var(--primary-color), var(--background-color), var(--secondary-color));
