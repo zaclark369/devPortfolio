@@ -19,7 +19,41 @@ body {
 }
 
 header {
-    display: block;
+    padding: 20px;
+    display: flex;
+    background: linear-gradient(0.5turn, var(--primary-color), var(--background-color), var(--secondary-color));
+    color: var(--primary-color);
+    
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 78px;
+    margin: 2px;
+    margin-right: 48px;
 }
 
 div {
@@ -93,6 +127,13 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+a {
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+    color: var(--secondary-color);
+    background-color: transparent;
 }
 
 .paragraphdesc {
