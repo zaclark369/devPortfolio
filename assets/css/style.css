@@ -153,3 +153,32 @@ a {
     font-size: 24px;
     font-weight: 900;
 }
+
+
+footer {
+    flex: 40%;
+    background: linear-gradient(0.5turn, var(--primary-color), var(--background-color), var(--secondary-color));
+    padding: 20px;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 52px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 30.2, .4);
+}
+
+footer h2 {
+    display: inline-block;
+    text-align: left;
+}
+
+footer h3 {
+    display: inline;
+    text-align: right;
+    padding: 5px;
+    margin: 5px;
+}
+
+footer h3 img {
+    height: 38px;
+}
