@@ -84,9 +84,6 @@ div {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-    background-image: url("../images/20211018-IMG_4380-3.jpg");
-    background-position: 96% 0;
-    background-size: contain;
 }
 
 .container {
@@ -101,6 +98,23 @@ div {
 .herotext {
     width: 70%;
     max-width: 820px;
+}
+
+.hero-picture {
+    color: var(--secondary-color);
+    padding: 15px;
+    width: 25%;
+    margin: 3.5%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 30.2, .4);
+    border-radius: 15px;
+}
+
+.hero-picture img {
+    width: 100%;
+    flex: 0 0 400px;
 }
 
 h1 {
@@ -140,6 +154,7 @@ a {
     max-width: 511px;
 }
 
+/*
 .buttondown {
     display: inline-block;
     margin-top: 30px;
@@ -153,7 +168,7 @@ a {
     font-size: 24px;
     font-weight: 900;
 }
-
+*/
 aside {
     flex: 30%;
     position: absolute;
@@ -188,7 +203,7 @@ footer h2 {
     text-align: left;
 }
 
-footer h3 {
+footer h3, p {
     display: inline;
     text-align: right;
     padding: 5px;
