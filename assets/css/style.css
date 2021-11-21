@@ -56,6 +56,7 @@ header nav {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    vertical-align: middle;
 }
 
 header nav ul {
@@ -182,7 +183,7 @@ a {
 
 .boxmodel {
     flex: 1;
-    margin: 10px;
+    margin: 20px;
     border: 1px solid #ccc;
     border-radius: 1px;
     box-shadow: 8px 8px 2px 1px rgba(230, 230, 247, 0.2);
@@ -200,10 +201,14 @@ a {
 
 .boxmodel h3 {
     padding: 5px 0 5px 0;
+    font-size: 30px;
+    font: bold;
+    
 }
 
 .boxmodel p {
     padding: 0 0 10px;
+    font: normal;
 }
 
 .boxmodel .boxtext {
@@ -211,8 +216,8 @@ a {
 }
 
 .boxmodel:hover {
-    size: bold;
-    box-shadow: 0 1px 2px rgba(0, 0)
+    -webkit-box-shadow: 0px 10px 28px rgba(230, 230, 247, 0.2);
+    box-shadow: 0px 10px 28px rgba(230, 230, 247, 0.2);
 }
 
 
@@ -240,7 +245,7 @@ a {
     transition: all 0.3s ease-in;
     -webkit-box-shadow: 0px 4px 8px rgba(230, 230, 247, 0.1);
             box-shadow: 0px 4px 8px rgba(230, 230, 247, 0.1);
-    border: 1px solid #ccc;
+
   }
   
   .grid li:hover {
@@ -325,7 +330,10 @@ footer h3, p {
 
 footer h3 img {
     height: 38px;
+    align-items: center;
+    vertical-align: middle;
 }
+
 
 
 /*  991PX media queries */
@@ -371,5 +379,9 @@ footer h3 img {
   
     .contact a {
       font-size: 12px;
+    }
+
+    .paragraphdesc {
+        max-height: 10%;
     }
   }
