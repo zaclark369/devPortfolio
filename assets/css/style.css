@@ -1,12 +1,13 @@
-* {
-    box-sizing: border-box;
-}
-
 :root  {
     --background-color: #110022;
     --primary-color: #66ccff;
     --secondary-color: #0066cc;
 }
+
+* {
+    box-sizing: border-box;
+}
+
 
 body {
     background-color: var(--background-color);
