@@ -7,7 +7,7 @@
 - Taught me a lot about the use of flexbox's and how they work together.
 
 ## Screenshot
-  ![Screenshot of the website](assets\images\portfolio-page-screencapture.png)
+  ![Screenshot of the website](assets/images/portfolio-page-screencapture.png)
 
 ## Built with
 -HTML
