@@ -9,7 +9,7 @@
 }
 
 /* General */
-a, article, aside, body, center, div, footer, form, h1, h2, h3, h4, h5, h6, header, i, img, li, menu, nav, ol, p, section, ul {
+a, article, aside, body, center, div, footer, form, h1, h2, h3, h4, h5, h6, header, i, img, li, menu, nav, ol, p, section, ul, main {
     margin: 0;
     padding: 0;
     border: 0;
@@ -86,32 +86,26 @@ div {
     -webkit-box-direction: normal;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-.container .containerhero {
+    align-items: center;
     display: flex;
-    min-height: 545px;
-    margin-bottom: 80px;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+width: 100%;
+height: 100vh;
 }
 
-.container {
-    width: 100%;
-    max-width: 1440px;
-    padding-right: 100px;
-    padding-left: 100px;
-    margin-left: auto;
-    margin-right: auto;
+.hero-container {
+    -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  padding: 0 15px;
+  width: 100%;
 }
 
 .herotext {
@@ -124,18 +118,20 @@ div {
     padding: 15px;
     width: 25%;
     margin: 3.5%;
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 10px rgba(0, 0, 30.2, .4);
-    border-radius: 15px;
+    
+    position: relative;
 }
 
 .hero-picture img {
-    width: 100%;
-    flex: 0 0 400px;
+    width: 203px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--secondary-color);
+    box-shadow: 8px 8px 2px 1px rgba(230, 230, 247, 0.2);
+    border-radius: 15px;
 }
 
+/* comment out to see what changes */
 h1 {
     margin-bottom: 30px;
     font-size: 57px;
@@ -189,7 +185,7 @@ a {
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 1px;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 30.2, .4);
+    box-shadow: 8px 8px 2px 1px rgba(230, 230, 247, 0.2);
     flex-grow: 1;
     padding: 5px;
 }
@@ -197,6 +193,69 @@ a {
 .boxmodel:nth-child() {
     flex: 2;
 }
+
+.boxmodel img {
+    width: 100%;
+}
+
+.boxmodel h3 {
+    padding: 5px 0 5px 0;
+}
+
+.boxmodel p {
+    padding: 0 0 10px;
+}
+
+.boxmodel .boxtext {
+    padding: 0 5px 5px;
+}
+
+.boxmodel:hover {
+    size: bold;
+    box-shadow: 0 1px 2px rgba(0, 0)
+}
+
+
+
+/* Skills Grid Styling */
+.skillsContainer {
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(80px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+  
+  .grid li {
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -webkit-box-shadow: 0px 4px 8px rgba(230, 230, 247, 0.1);
+            box-shadow: 0px 4px 8px rgba(230, 230, 247, 0.1);
+    border: 1px solid #ccc;
+  }
+  
+  .grid li:hover {
+    -webkit-box-shadow: 0px 10px 28px rgba(230, 230, 247, 0.2);
+            box-shadow: 0px 10px 28px rgba(230, 230, 247, 0.2);
+  }
+  
+  .grid li p {
+    margin-top: 10px;
+  }
+  
+  .grid li img {
+    width: 35px;
+    height: 35px;
+  }
 /*
 .buttondown {
     display: inline-block;
@@ -226,7 +285,7 @@ aside {
     border-radius: 30px;
     padding: 5px;
     margin: 10px;
-    box-shadow: 12px 12px 2px 1px rgb(0 0 95 / 20%);
+    box-shadow: 8px 8px 2px 1px rgba(230, 230, 247, 0.2);
     color: white;
 }
 
@@ -249,7 +308,7 @@ footer {
     padding: 5px;
     margin: 10px;
     margin-top: 52px;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 30.2, .4);
+    box-shadow: 8px 8px 2px 1px rgba(230, 230, 247, 0.2);
 }
 
 footer h2 {
@@ -267,3 +326,50 @@ footer h3, p {
 footer h3 img {
     height: 38px;
 }
+
+
+/*  991PX media queries */
+@media (min-width: 991px) {
+   
+  }
+  
+  
+  /*  900PX media queries */
+  @media (max-width: 990px) {
+    header {
+      display: block;
+      padding: 80px 0;
+      height: auto;
+    }
+    header nav {
+      text-align: center;
+      margin-top: 50px;
+    }
+    header nav li {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    .socialsList {
+      margin-left: 10px;
+    }
+  } 
+  
+  /* 767PX media queries  */
+  @media (max-width: 767px) {
+    .contact {
+      display: block;
+    }
+  
+    .boxmodel {
+      display: block;
+    }
+  
+    .contact {
+      margin-top: 5px;
+    }
+  
+    .contact a {
+      font-size: 12px;
+    }
+  }
