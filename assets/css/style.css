@@ -8,6 +8,23 @@
     box-sizing: border-box;
 }
 
+/* General */
+a, article, aside, body, center, div, footer, form, h1, h2, h3, h4, h5, h6, header, i, img, li, menu, nav, ol, p, section, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  article, aside, footer, header, menu, nav, section {
+    display: block;
+  }
+  
+  ol,ul {
+    list-style: none;
+  }
 
 body {
     background-color: var(--background-color);
@@ -17,6 +34,7 @@ body {
     line-height: 38px;
     font-weight: 400;
     margin: 0;
+    position: relative;
 }
 
 header {
@@ -128,7 +146,7 @@ h1, h2 {
     font-weight: 700;
 }
 
-h1, h2, h3, h4, h5, h6, ol, p, ul {
+h1, h2, h3, h4, h5, h6, ol, p, ul nav{
     margin-bottom: 10px;
 }
 
@@ -155,6 +173,30 @@ a {
     max-width: 511px;
 }
 
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* flex boxes */
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.boxmodel {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 30.2, .4);
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.boxmodel:nth-child() {
+    flex: 2;
+}
 /*
 .buttondown {
     display: inline-block;
@@ -170,6 +212,7 @@ a {
     font-weight: 900;
 }
 */
+/*
 aside {
     flex: 30%;
     position: absolute;
@@ -195,6 +238,8 @@ aside p {
     position: relative;
     display: block;
 }
+
+*/
 footer {
     flex: 40%;
     background: linear-gradient(0.5turn, var(--primary-color), var(--background-color), var(--secondary-color));
